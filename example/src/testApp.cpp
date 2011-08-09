@@ -2,60 +2,11 @@
 
 //--------------------------------------------------------------
 void testApp::setup(){
-
+	timestamp.setup(1.f,			// Interval to save the timestamp, in seconds. Defaults to 1.f.
+					"timestamp");	// Timestamp filename. Defaults to "timestamp" (saved in "data/timestamp.txt").
 }
 
 //--------------------------------------------------------------
 void testApp::update(){
-
-}
-
-//--------------------------------------------------------------
-void testApp::draw(){
-
-}
-
-//--------------------------------------------------------------
-void testApp::keyPressed(int key){
-
-}
-
-//--------------------------------------------------------------
-void testApp::keyReleased(int key){
-
-}
-
-//--------------------------------------------------------------
-void testApp::mouseMoved(int x, int y ){
-
-}
-
-//--------------------------------------------------------------
-void testApp::mouseDragged(int x, int y, int button){
-
-}
-
-//--------------------------------------------------------------
-void testApp::mousePressed(int x, int y, int button){
-
-}
-
-//--------------------------------------------------------------
-void testApp::mouseReleased(int x, int y, int button){
-
-}
-
-//--------------------------------------------------------------
-void testApp::windowResized(int w, int h){
-
-}
-
-//--------------------------------------------------------------
-void testApp::gotMessage(ofMessage msg){
-
-}
-
-//--------------------------------------------------------------
-void testApp::dragEvent(ofDragInfo dragInfo){ 
-
+	timestamp.update();
 }
