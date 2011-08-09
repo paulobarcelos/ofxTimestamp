@@ -31,7 +31,7 @@ void ofxTimestamp::update(){
 		if ( f == nil )
 			return;
 		
-		fprintf (f,"%d\n", ofGetSystemTime());
+		fprintf (f,"%i\n", ofGetElapsedTimeMillis());
 		fclose(f);
 	}
 }
